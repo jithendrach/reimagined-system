@@ -10,7 +10,7 @@
        </form>
 	  
       <?php
-         $data = $_GET ("word");
+         $data = $_GET("word");
          $words = explode(',', $data);
          $str = "";
          for($i=0;$i<sizeof($words)-1;$i++){
