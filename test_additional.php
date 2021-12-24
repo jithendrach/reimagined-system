@@ -4,12 +4,13 @@
       <title> test_addition</title>
   </head>
   <body>  
-    	<form action="" method="get" >
+    	<form action="#" method="get" >
 	      <input type="text" name="word" value=" " >
 		  <input type="submit" name="submit" value="increment">
        </form>
 	  
       <?php
+	  if(isset(submit)){
          $data = $_GET("word");
          $words = explode(',', $data);
          $str = "";
@@ -19,8 +20,10 @@
             $str = $str.substr($words[$i],0,(strlen($words[$i]) - 1)).$num.",";
            }
          $str = $str.$words[$i];
-         print($str);
+         echo($str);
+	  }
       ?>
 
    </body>
 </html>   
+=SUM(A2,B2,0)
